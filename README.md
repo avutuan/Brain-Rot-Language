@@ -1,5 +1,24 @@
-# Brain-Rot-Language
+# EECS 510 Final Project - _Brain Rot Language_
 
-EECS 510 Final Project - a language representing popular culture adaptation of meme culture into everyday conversation, known as brain rot.
+Created by: **Tuan Vu, Raj Kaura, Kobe Jordan**
 
-By Tuan Vu, Raj Kaura, and Kobe Jordan
+Description of project: **A language representing popular culture adaptation of meme culture into everyday conversation, known as brain rot.**
+
+## List of Deliverables and Features
+
+The following **required** functionality is completed:
+
+- [x] **List of deliverables and features**
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='README.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with ...
+[Kap](https://getkap.co/) for macOS
+
+## Instructions to Compiling, Building, and Running Program
+
+Here's the instructions to test our code.
