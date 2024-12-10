@@ -10,9 +10,9 @@ The following **required** functionality is completed:
 
 - [x] **List of deliverables and features**
 
-## Video Walkthrough
+## Fun Gif
 
-Here's a walkthrough of implemented user stories:
+Here's a fun gif:
 
 <img src='README.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
