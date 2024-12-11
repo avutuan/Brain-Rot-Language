@@ -26,7 +26,16 @@ class NFA:
     
     def run(self, input_string: str):
         current_state = self.initial_state
-        for symbol in input_string:
+        symbol_list = []
+        string_builder = ""
+        
+        for char in input_string:
+            string_builder += char
+            if string_builder in self.alphabet:
+                symbol_list.append(string_builder)
+                string_builder = ""
+        
+        for symbol in symbol_list:
             current_state = current_state.next_state(symbol)
             if current_state is None and current_state not in self.final_states:
                 return False

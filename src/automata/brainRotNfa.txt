@@ -57,7 +57,6 @@ q9 yns q10
 q9 opp q10
 q9 simp q10
 q9 aura q10
-q9 bop q10
 q9 goat q10
 q9 session q10
 q9 baby-oil q10
