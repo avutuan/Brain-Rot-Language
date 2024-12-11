@@ -5,4 +5,5 @@ run:
 # Cleans the project directory of temporary files
 clean:
 	rm -rf src/components/__pycache__
+	rm -rf src/.DS_Store
 	rm -rf .DS_Store
