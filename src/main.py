@@ -10,7 +10,6 @@ def main():
     nfa.parse_input_to_nfa(file)
     
     # Automated testing 
-    tests.run_tests()
     print("-----------------------------------------------------")
     # Custom user input for the string to test
     x = False
@@ -20,6 +19,5 @@ def main():
             break
         print((tests.accept(nfa, test)))
 
-    
 if __name__ == "__main__":
     main()

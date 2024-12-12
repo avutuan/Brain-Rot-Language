@@ -40,11 +40,8 @@ def run_tests():
         # Find the longest string in the list
         max_length = max(len(s) for s in strings)
         # Pad the string with spaces to match the longest string
-        if i == "":
-            i = "empty string"
-            formatted_string = f"{i:<{max_length}}"
-        else: 
-            formatted_string = f"{i:<{max_length}}"
+
+        formatted_string = f"{i:<{max_length + 2}}"
         print(f"{formatted_string}: {result}\n")
         
 run_tests()
