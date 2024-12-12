@@ -11,9 +11,9 @@ def main():
     
     # Automated testing 
     tests.run_tests()
-    
+    print("-----------------------------------------------------")
     # Custom user input for the string to test
-    print(nfa.run(input("Enter a personal string: ")))
+    print(nfa.run(input("Enter a custom string to try and break our automaton!: ")))
     
 if __name__ == "__main__":
     main()
