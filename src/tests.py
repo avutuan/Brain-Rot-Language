@@ -1,6 +1,6 @@
 from components.nfa import NFA
 
-# accept function to determine if the NFA accepts the input string
+# Accept function to determine if the NFA accepts the input string
 def accept(A: NFA, w: str) -> str:
     acceptBoolean = A.run(w)
     if acceptBoolean:

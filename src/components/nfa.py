@@ -35,6 +35,7 @@ class NFA:
             current_state = current_state.next_state(symbol)
             if current_state is None and current_state not in self.final_states:
                 return False
+
         return current_state in self.final_states
     
     def parse_input_to_nfa(self, input_string: str):
