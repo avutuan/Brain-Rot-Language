@@ -16,7 +16,7 @@ nfa.parse_input_to_nfa(file)
 strings = [
     "the_sigma_cooked_the_yns",
     "the_opp_faded_the_rizzler",
-    "the_low-taper-fade_mogged",
+    "the_goat's_cooked",
     "the_glizzy_cooked",
     "fanum-tax",
     "skibidi-toilet",
