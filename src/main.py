@@ -10,8 +10,6 @@ def main():
     nfa.parse_input_to_nfa(file)
     
     # Automated testing 
-    print("-----------------------------------------------------")
-    # Custom user input for the string to test
     x = False
     while not x:
         test = input("Enter a custom string to try and break our automaton! Enter 0 to stop: ")

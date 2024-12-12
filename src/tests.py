@@ -4,9 +4,9 @@ from components.nfa import NFA
 def accept(A: NFA, w: str) -> str:
     acceptBoolean = A.run(w)
     if acceptBoolean:
-        return "accepted"
+        return "accept"
     else:
-        return "rejected"
+        return "reject"
 
 # Create an NFA object and parse the input string to the NFA
 nfa = NFA()
@@ -44,4 +44,5 @@ def run_tests():
         formatted_string = f"{i:<{max_length + 2}}"
         print(f"{formatted_string}: {result}\n")
         
-run_tests()
+if __name__ == "__main__":
+    run_tests()
