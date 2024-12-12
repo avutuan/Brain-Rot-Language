@@ -1,6 +1,5 @@
 # driver function for the program
 from components.nfa import NFA
-from components.state import State
 
 def main():
     nfa = NFA()
