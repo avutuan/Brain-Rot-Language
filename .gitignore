@@ -2,3 +2,4 @@
 src/.DS_Store
 src/automata
 src/components/__pycache__
+src/__pycache__
