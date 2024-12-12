@@ -10,6 +10,7 @@ q0 aura q1
 q0 glazing q1
 q0 cooked q1
 q0 fanum-tax q1
+q0 skibidi-toilet q1
 q0 the q2
 q2 _ q3
 q3 skibidi-toilet q4

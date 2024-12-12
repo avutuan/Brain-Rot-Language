@@ -11,10 +11,6 @@ class NFA:
     def __str__(self):
         return f"Initial state: {self.initial_state}, \nFinal states: {self.final_states}, \nStates: {self.states}, \nTransitions: {[(state, state.transitions) for state in self.states]}"
     
-    def _transition_table(self):
-        for state in self.states:
-            state.transitions = self.transitions[state.name]
-    
     def add_state(self, state: State):
         self.states.append(state)
     
