@@ -46,5 +46,5 @@ def run_tests():
         else: 
             formatted_string = f"{i:<{max_length}}"
         print(f"{formatted_string}: {result}\n")
-
+        
 run_tests()

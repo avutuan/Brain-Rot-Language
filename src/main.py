@@ -13,7 +13,13 @@ def main():
     tests.run_tests()
     print("-----------------------------------------------------")
     # Custom user input for the string to test
-    print(nfa.run(input("Enter a custom string to try and break our automaton!: ")))
+    x = False
+    while not x:
+        test = input("Enter a custom string to try and break our automaton! Enter 0 to stop: ")
+        if test == "0":
+            break
+        print((tests.accept(nfa, test)))
+
     
 if __name__ == "__main__":
     main()
