@@ -1,17 +1,50 @@
 from components.nfa import NFA
 
-# Accept function to determine if the NFA accepts the input string
+# accept function to determine if the NFA accepts the input string
 def accept(A: NFA, w: str) -> str:
     acceptBoolean = A.run(w)
     if acceptBoolean:
-        return "accept"
+        return "accepted"
     else:
-        return "reject"
+        return "rejected"
 
 # Create an NFA object and parse the input string to the NFA
 nfa = NFA()
 file = open("src/automata/brainRotNfa.txt", "r").read()
 nfa.parse_input_to_nfa(file)
 
+strings = [
+    "the_sigma_cooked_the_yns",
+    "the_opp_faded_the_rizzler",
+    "the_low-taper-fade_mogged",
+    "the_glizzy_cooked",
+    "fanum-tax",
+    "skibidi-toilet",
+    "skibidi-toilet_fanum-tax_baby-oil",
+    "apple",
+    "the",
+    "the_",
+    "the_goat",
+    "the_goat_",
+    "the_goat’s_",
+    "the_goat_cooked_",
+    "the_goat_cooked_the",
+    "",
+    "the_sigma_cooked_the_yns_aura"
+]
+
 # Test cases
-print(accept(nfa, "the_sigma_cooked_the_yns"))
+def run_tests():
+    for i in strings:
+        result = accept(nfa, i)
+        # Find the longest string in the list
+        max_length = max(len(s) for s in strings)
+        # Pad the string with spaces to match the longest string
+        if i == "":
+            i = "empty string"
+            formatted_string = f"{i:<{max_length}}"
+        else: 
+            formatted_string = f"{i:<{max_length}}"
+        print(f"{formatted_string}: {result}\n")
+
+run_tests()
